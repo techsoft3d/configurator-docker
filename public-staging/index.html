@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Configurator | HOOPS Web Viewer
+        Staging Configurator | HOOPS Web Viewer
     </title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=edge" />
@@ -44,7 +44,7 @@
         initializeViewer()
 
         async function startViewer(modelName) {
-            var server = new ServerConnection("https://configurator-docker.techsoft3d.com"); //change to IP of host server
+            var server = new ServerConnection("https://configurator-docker-staging.techsoft3d.com"); //change to IP of host server
 
             await server.connect();
             viewer = new Communicator.WebViewer({
