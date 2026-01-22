@@ -83,7 +83,7 @@ jobs:
 
       - name: Build and Run Docker Containers
         run: |
-          docker-compose up -d --force-recreate
+          docker-compose -p main_project up -d --force-recreate
 
   run-in-oregon:
     name: Run on Oregon Runner
@@ -162,4 +162,4 @@ jobs:
 
       - name: Build and Run Docker Containers
         run: |
-          docker-compose up -d --force-recreate
+          docker-compose -p main_project up -d --force-recreate
